@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Zvuk Grabber Launcher",
+  "version": "1.0",
+  "description": "Adds a button to zvuk.com to launch zvuk-grabber via Konsole.",
+  "permissions": [],
+  "host_permissions": [
+    "https://zvuk.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://zvuk.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.webp"
+  }
+}
